@@ -435,7 +435,7 @@ function prepGetNeighbor(value) {
             document.getElementById("container").style.backgroundColor = value;
             document.getElementById("colorBox").style.backgroundColor = color;
             document.body.style.backgroundColor = `#${value}`;
-            document.getElementById("colorName").innerHTML = name;
+            document.getElementById("colorName").innerHTML = `color.${name}`;
             document.getElementById("colorValue").innerHTML = color;
         } else if (rgbPattern.test(value)) {
             //is rgb
@@ -444,7 +444,7 @@ function prepGetNeighbor(value) {
             document.getElementById("container").style.backgroundColor = value;
             document.getElementById("colorBox").style.backgroundColor = color;
             document.body.style.backgroundColor = value;
-            document.getElementById("colorName").innerHTML = name;
+            document.getElementById("colorName").innerHTML = `color.${name}`;
             document.getElementById("colorValue").innerHTML = color;
         } else {
             die();
